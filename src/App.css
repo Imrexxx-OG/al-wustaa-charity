@@ -1,38 +1,273 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', Arial, sans-serif; /* Switched to Roboto for a modern, clean look */
+}
+
+body {
+  background-color: #FFFFFF; /* White */
+  color: #333;
+}
+
+/* Header */
+.header {
+  background-color: #6B3FA0; /* Purple */
+  color: #FFFFFF; /* White */
+  padding: 1.5rem 2rem; /* Slightly increased padding for elegance */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.logo-placeholder {
+  width: 100px;
+  height: 100px;
+  background-color: #F5F5F5; /* Light gray for placeholder */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px; /* Rounded corners for sophistication */
+}
+
+.logo-placeholder img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.header-title {
+  font-size: 1.8rem; /* Slightly larger for prominence */
+  font-weight: 700;
+  color: #D4AF37; /* Gold for branding */
+}
+
+.nav a {
+  color: #FFFFFF; /* White */
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-size: 1.1rem;
+  transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+.nav a:hover {
+  color: #D4AF37; /* Gold on hover */
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  text-align: center;
+  color: #FFFFFF; /* White */
+  background: linear-gradient(135deg, #6B3FA0 0%, #4B2D73 100%); /* Purple gradient for depth */
+  padding: 5rem 2rem; /* Increased padding for a grander feel */
+}
+
+.hero video {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 2rem;
+  border: 2px solid #D4AF37; /* Gold border for video */
+  border-radius: 8px;
+}
+
+.hero h1 {
+  font-size: 3rem; /* Larger for impact */
+  margin-bottom: 1.5rem;
+  color: #D4AF37; /* Gold for emphasis */
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* About */
+.about {
+  padding: 4rem 2rem; /* Increased padding for spaciousness */
+  background-color: #FFFFFF; /* White */
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.about h2 {
+  color: #6B3FA0; /* Purple */
+  font-size: 2.5rem; /* Larger for hierarchy */
+  margin-bottom: 2rem;
+  font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.about-content {
+  max-width: 900px; /* Wider for readability */
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.about-content p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8; /* Improved readability */
+  color: #333;
+}
+
+.about-content ul {
+  max-width: 1000px;
+  padding: 0 1rem;
+  list-style: none;
+}
+
+.about-content ul li {
+  margin-bottom: 1.5rem;
+  line-height: 2;
+  font-size: 1.1rem;
+  border-left: 3px solid #D4AF37; /* Gold */
+  padding: 1rem 0 1rem 1.5rem;
+}
+
+.about-content ul li strong {
+  font-weight: 600;
+  color: #6B3FA0; /* Purple */
+}
+
+.about-content ul ul {
+  padding-left: 2rem;
+  margin-top: 0.5rem;
+}
+
+.about-content ul ul li {
+  font-size: 1rem;
+  border-left: none;
+  padding: 0.5rem 0;
+}
+
+.values {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1.5rem; /* Slightly larger gap */
+  margin-top: 2.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.value-item {
+  background-color: #D4AF37; /* Gold */
+  color: #FFFFFF; /* White */
+  padding: 1.2rem;
+  border-radius: 8px;
+  width: 140px; /* Slightly wider for balance */
+  text-align: center;
+  font-weight: 500;
+  transition: transform 0.3s ease; /* Smooth scaling on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.value-item:hover {
+  transform: scale(1.05); /* Subtle hover effect */
+}
+
+/* Activities */
+.activities {
+  padding: 4rem 2rem;
+  background-color: #F9F9F9; /* Off-white for subtle contrast */
+  text-align: center;
+}
+
+.activities h2 {
+  color: #6B3FA0; /* Purple */
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.activity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Slightly larger cards */
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.activity-card {
+  background-color: #FFFFFF; /* White */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Stronger shadow for depth */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.activity-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.activity-card img {
+  width: 100%;
+  height: 220px; /* Slightly taller images */
+  object-fit: cover;
+  border-bottom: 3px solid #D4AF37; /* Gold border for emphasis */
+}
+
+.activity-card p {
+  padding: 1.5rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Book Promo */
+.book-promo {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #6B3FA0 0%, #4B2D73 100%); /* Purple gradient */
+  color: #FFFFFF; /* White */
+  text-align: center;
+}
+
+.book-promo h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #D4AF37; /* Gold */
+  font-weight: 700
+}
+
+.book-promo p {
+  max-width: 900px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.8;
+}
+
+.book-promo a {
+  color: #6B3FA0; /* Purple */
+  background-color: #D4AF37; /* Gold */
+  padding: 0.75rem 1.5rem; /* Larger button */
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.book-promo a:hover {
+  background-color: #B8972F; /* Darker gold on hover */
+}
+
+
+/* Footer */
+.footer {
+  background-color: #6B3FA0; /* Purple */
+  color: #FFFFFF; /* White */
+  text-align: center;
+  padding: 2.5rem;
+}
+
+.footer p {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.footer a {
+  color: #D4AF37; /* Gold */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #FFFFFF; /* White on hover */
 }
