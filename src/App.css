@@ -366,6 +366,20 @@ body {
     width: 100%;
     text-align: center;
   }
+
+  .values {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    gap: 0.75rem; /* Reduced gap for mobile */
+  }
+
+  .value-item {
+    width: 100%; /* Full width for mobile */
+    max-width: 200px; /* Cap for readability */
+    padding: 0.75rem; /* Adjusted padding */
+  }
+
+  
 }
 
 /* Animation for nav slide-in */
