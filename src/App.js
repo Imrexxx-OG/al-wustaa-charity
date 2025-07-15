@@ -7,6 +7,7 @@ import Activities from './components/Activities';
 import BookPromo from './components/BookPromo';
 import Footer from './components/Footer';
 
+
 function App() {
   return (
     <div className="App">
