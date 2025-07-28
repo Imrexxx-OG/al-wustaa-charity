@@ -318,6 +318,7 @@ body {
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
+  margin-left: 0.5rem;
 }
 
 .footer a:hover {
