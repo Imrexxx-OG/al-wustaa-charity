@@ -5,7 +5,7 @@ function Footer() {
     <footer className="footer">
       <p>Al-Wustaa Charitable Foundation</p>
       <p>SAVE LIFE SAVE HUMANITY - ومن أحياها فكأنما أحيا الناس جميعا</p>
-      <p>Contact us: info@alwustaa.org | Follow us on <a href="https://t.me/your-telegram-link" target="_blank" rel="noopener noreferrer">Telegram</a></p>
+      <p>Contact us: alwustaacharitablefoundation3@gmail.com | Follow us on <a href="https://t.me/your-telegram-link" target="_blank" rel="noopener noreferrer">Telegram</a></p>
     </footer>
   );
 }

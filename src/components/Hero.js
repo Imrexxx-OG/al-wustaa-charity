@@ -7,7 +7,7 @@ function Hero() {
       <p>Empowering Communities, Uniting Ummah, Spreading Mercy</p>
       <p>SAVE LIFE SAVE HUMANITY - ومن أحياها فكأنما أحيا الناس جميعا</p>
       <video controls>
-        <source src="https://moccasin-wrong-prawn-350.mypinata.cloud/ipfs/QmVhy8GXdcDb77gReX7EBQCLoMfFWCkFXmTMCS1DPHQxX4" type="video/mp4" />
+        <source src="https://www.facebook.com/watch/?v=1295694785181539" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </section>
