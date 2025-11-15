@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Activities from './components/Activities';
 import BookPromo from './components/BookPromo';
+import Donations from './components/Donations';
 import Footer from './components/Footer';
 
 
@@ -16,6 +17,7 @@ function App() {
       <About />
       <Activities />
       <BookPromo />
+      <Donations />
       <Footer />
     </div>
   );
