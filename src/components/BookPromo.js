@@ -9,10 +9,10 @@ function BookPromo() {
         Discover our recommended book to deepen your understanding of Islam and support our cause. 
       </p>
       <p>
-        Join our Telegram community for inspiring Islamic preaching and updates on our initiatives.
+        Join our WhatsApp community for inspiring Islamic preaching and updates on our initiatives.
       </p>
-      <a href="https://t.me/your-telegram-link" target="_blank" rel="noopener noreferrer">
-        Join Our Telegram
+      <a href="https://chat.whatsapp.com/LI4kwVmC8SR1ZVAJKeJ4Ei" target="_blank" rel="noopener noreferrer">
+        Join Our Community
       </a>
     </section>
   );
