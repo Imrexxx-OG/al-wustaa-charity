@@ -29,6 +29,12 @@ function Activities() {
             2024 Medical Outreach at then Arrahmatul-a'lamiya and now Al-wustaa Charitable Foundation
           </p>
         </div>
+        <div className="activity-card">
+          <img src="/image6.jpeg" alt="Activity 5" />
+          <p>
+            2025 Medical Outreach at then Arrahmatul-a'lamiya and now Al-wustaa Charitable Foundation
+          </p>
+        </div>
       </div>
     </section>
   );
