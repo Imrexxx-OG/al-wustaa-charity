@@ -329,7 +329,7 @@ body {
 
 /* Book Promo */
 .book-promo {
-  padding: 4rem 2rem;
+  padding: 4rem 2rem; /* Moved section padding here */
   background: linear-gradient(135deg, #6B3FA0 0%, #4B2D73 100%); /* Purple gradient */
   color: #FFFFFF; /* White */
   text-align: center;
@@ -339,29 +339,42 @@ body {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   color: #D4AF37; /* Gold */
-  font-weight: 700
+  font-weight: 700;
 }
 
 .book-promo p {
   max-width: 900px;
-  margin: 0 auto 1.5rem;
-  line-height: 1.8;
+  margin: 0 auto 0.5rem;
+  line-height: 1;
 }
 
 .book-promo a {
-  color: #6B3FA0; /* Purple */
+  display: inline-block; /* Ensures proper button behavior */
+  color: #6B3FA0; /* Purple text */
   background-color: #D4AF37; /* Gold */
-  padding: 0.75rem 1.5rem; /* Larger button */
+  padding: 0.75rem 1.25rem; /* Button padding */
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
   transition: background-color 0.3s ease;
+  margin: 1rem 0; /* Spacing between elements */
 }
 
 .book-promo a:hover {
   background-color: #B8972F; /* Darker gold on hover */
 }
 
+/* Mobile-specific styles (add to @media if needed) */
+@media (max-width: 768px) {
+  .book-promo {
+    padding: 3rem 1rem; /* Reduced for mobile */
+  }
+
+  .book-promo a {
+    width: 100%; /* Full-width buttons on mobile */
+    margin: 0.75rem 0;
+  }
+}
 
 /* Footer */
 .footer {
